@@ -131,14 +131,13 @@ class UserPane extends React.Component {
               const signerAddress = await signer.getAddress();
               const signerBalance = await signer.getBalance();
       
-              const LoveFaucet = new ethers.Contract(loveFaucetContractAddr, loveFaucetContractAbi, signer);
+              const LoveFaucet = new ethers.Contract(loveFaucetContractAddr,
+                                                     loveFaucetContractAbi,
+                                                     signer);
               const userCanClaim = await LoveFaucet.canClaim();
               const dropAmount = await LoveFaucet.dropAmount();
               const faucetBalance = await LoveFaucet.balance();
               
-              console.log(dropAmount);
-              console.log(faucetBalance);
-
               if (!userCanClaim) {
                   this.setState({
                       isLoggedIn: true,
