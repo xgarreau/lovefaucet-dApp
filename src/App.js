@@ -9,7 +9,7 @@ let loveFaucetContractAddr = "0x181FFF78c7Ea1160E7A8b5CBFBEF3469C647bB41";
 
 // Reload page if network or wallet is changed
 if (window.ethereum) {
-  window.ethereum.on('networkChanged', function (networkId) {
+  window.ethereum.on('chainChanged', function (networkId) {
       window.location.reload();
   });
 }
