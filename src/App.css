@@ -15,11 +15,11 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: #a48;
+  color: #f0f;
 }
 
 h1 {
-  color: #a48;
+  color: #f0f;
 }
 
 .header-message {
@@ -37,6 +37,6 @@ h1 {
   font-size: 1.2em;
   border-radius: 10px;
   background-color: #000;
-  color: #a48;
-  border: solid 5px #a48;
+  color: #f0f;
+  border: solid 5px #f0f;
 }
