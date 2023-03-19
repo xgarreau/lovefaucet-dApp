@@ -238,14 +238,31 @@ class UserPane extends React.Component {
 
 function App() {
   return (
+    <>
+    <ToastContainer />
+      <nav>
+        <ul>
+          <li>
+            <a href="https://lovefaucet.mescryptos.fr/">Faucet</a>
+          </li>
+          <li>💗</li>
+          <li>
+            <a href="https://lovestore.mescryptos.fr/">Buy</a>
+          </li>
+          <li>💗</li>
+          <li>
+            <a href="https://lovestaking.mescryptos.fr/">Stake</a>
+          </li>
+        </ul>
+      </nav>
     <div className="App">
-      <ToastContainer />
-      <header className="App-header">
+    <header className="App-header">
         <h1>The LOVE faucet</h1>
         <img src="https://ipfs.io/ipfs/QmQT8XQn9Uf3azbti6FC4XT89bMwx7fd6AH7nYXtCjKZ3q/LOVE" className="App-logo" alt="logo" />
         <UserPane />
-      </header>
+    </header>
     </div>
+    </>
   );
 }
 
