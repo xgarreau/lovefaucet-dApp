@@ -1,5 +1,21 @@
-nav {
+body {
   background-color: #333;
+  color: #f0f;
+}
+
+h1 {
+  margin: 0;
+  padding: 0.67em;
+}
+
+footer {
+  background-color: #333;
+  border-top: 3px solid #f0f;
+  text-align: right;
+  padding: 10px 20px;
+}
+
+nav {
   border-bottom: 3px solid #f0f;
   text-align: center;
 }
@@ -16,12 +32,17 @@ nav li {
 }
 
 nav a {
-  text-decoration: none;
-  color: #f0f;
   font-size: calc(8px + 2vmin);
 }
 
-nav a:hover {
+nav a,
+footer a {
+  text-decoration: none;
+  color: #f0f;
+}
+
+nav a:hover,
+footer a:hover {
   color: #fff;
 }
 
@@ -36,16 +57,11 @@ nav a:hover {
 
 .App-header {
   background-color: #000;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: #f0f;
-}
-
-h1 {
   color: #f0f;
 }
 
