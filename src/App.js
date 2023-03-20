@@ -258,11 +258,11 @@ function App() {
     <div className="App">
     <header className="App-header">
         <h1>The LOVE faucet</h1>
-        <img src="https://ipfs.io/ipfs/QmQT8XQn9Uf3azbti6FC4XT89bMwx7fd6AH7nYXtCjKZ3q/LOVE" className="App-logo" alt="logo" />
+        <img src="/LOVE.jpg" className="App-logo" alt="logo" />
         <UserPane />
     </header>
     </div>
-    <footer>Made with 💗 on <a href="https://eon.horizen.io/docs/">HorizenEON Yuma testnet</a> by <a href="https://twitter.com/xgarreau">xgarreau</a></footer>
+    <footer>v1.0.0 - Made with 💗 on <a href="https://eon.horizen.io/docs/">HorizenEON Yuma testnet</a> by <a href="https://twitter.com/xgarreau">xgarreau</a></footer>
     </>
   );
 }
