@@ -63,6 +63,7 @@ footer a:hover {
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  margin-bottom: 0.67em;
 }
 
 .App-header {
