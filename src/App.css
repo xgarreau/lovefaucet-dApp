@@ -83,7 +83,8 @@ footer a:hover {
 .MyButton button
 {
   padding: 20px 50px;
-  margin: 20px auto;
+  margin: 0;
+  margin-bottom: 20px;
   font-size: calc(10px + 2vmin);
   border-radius: 10px;
   background-color: #000;
