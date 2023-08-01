@@ -117,7 +117,7 @@ class UserPane extends React.Component {
           const isEonMainnet = (currNetwork.chainId.toString() === "7332");
 
           if (!isEonMainnet) {
-              console.error('Please switch to Gobi Network and reload');
+              console.error('Please switch to Horizen Eon Network and reload');
               this.setState({
                   isEonMainnet: isEonMainnet,
               });
@@ -214,8 +214,8 @@ class UserPane extends React.Component {
           console.error("Please install MetaMask !");
           return <div className="header-message">Please install MetaMask !</div>;
       }
-      if (!this.state.isEon) {
-          return <div className="header-message">Please switch to Gobi Network</div>;
+      if (!this.state.isEonMainnet) {
+          return <div className="header-message">Please switch to Horizen Eon Network</div>;
       }
       if (!this.state.isLoggedIn) {
           return <MyLoginButton clickHandler={this.tryLogin} isDisabled={false} label="Connect Metamask" afterLabel="" />;
@@ -256,13 +256,14 @@ function App() {
         </ul>
       </nav>
     <div className="App">
-    <header className="App-header">
         <h1>The LOVE faucet</h1>
-        <img src="/LOVE.jpg" className="App-logo" alt="logo" />
-        <UserPane />
-    </header>
+        <h2>💗 Now on EON !! 💗</h2>
+        <header className="App-header">
+            <img src="/LOVE.jpg" className="App-logo" alt="logo" />
+            <UserPane />
+        </header>
     </div>
-    <footer>v1.2.0 - Made with 💗 on <a href="https://eon.horizen.io/docs/">Horizen EON</a> by <a href="https://twitter.com/xgarreau">xgarreau</a></footer>
+    <footer>v1.2.1 - Made with 💗 on <a href="https://eon.horizen.io/docs/">Horizen EON</a> by <a href="https://twitter.com/xgarreau">xgarreau</a></footer>
     </>
   );
 }

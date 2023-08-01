@@ -1,15 +1,24 @@
-body {
+body, footer {
   background-color: #333;
   color: #f0f;
 }
 
 h1 {
   margin: 0;
-  padding: 0.67em;
+  padding-top: 0.67em;
+}
+
+h2 {
+  margin: 0;
+  margin-bottom: 0.67em;
+}
+
+p {
+  margin: 0;
+  padding: 0;
 }
 
 footer {
-  background-color: #333;
   border-top: 3px solid #f0f;
   text-align: right;
   padding: 10px 20px;
@@ -47,6 +56,7 @@ footer a:hover {
 }
 
 .App {
+  background-color: #000;
   text-align: center;
 }
 
@@ -61,7 +71,7 @@ footer a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /*font-size: calc(10px + 2vmin);*/
+  font-size: calc(10px + 2vmin);
   color: #f0f;
 }
 
@@ -69,15 +79,11 @@ footer a:hover {
   margin: 20px 20px;
 }
 
-.MyButton
-{
-  margin: 50px 20px;
-}
-
 .MyButton button
 {
   padding: 20px 50px;
-  font-size: 1.2em;
+  margin: 20px auto;
+  font-size: calc(10px + 2vmin);
   border-radius: 10px;
   background-color: #000;
   color: #f0f;
