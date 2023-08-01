@@ -5,7 +5,7 @@ import loveFaucetContractAbi from "./abi.json";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
 
-let loveFaucetContractAddr = "0x181FFF78c7Ea1160E7A8b5CBFBEF3469C647bB41";
+let loveFaucetContractAddr = "0xE7c81e39d96d09993c9835ae61623F770C626a2D";
 
 // Reload page if network is changed
 if (window.ethereum) {
@@ -96,7 +96,7 @@ class UserPane extends React.Component {
           hasClaimed: false,
           address: null,
           balance: null,
-          isYumaTestnet: true,
+          isEonMainnet: true,
           userMessage: ""
       };
 
@@ -114,12 +114,12 @@ class UserPane extends React.Component {
           }
 
           const currNetwork = await ethProvider.getNetwork();
-          const isYumaTestnet = (currNetwork.chainId.toString() === "1662");
+          const isEonMainnet = (currNetwork.chainId.toString() === "7332");
 
-          if (!isYumaTestnet) {
-              console.error('Please switch to Yuma Network and reload');
+          if (!isEonMainnet) {
+              console.error('Please switch to Gobi Network and reload');
               this.setState({
-                  isYumaTestnet: isYumaTestnet,
+                  isEonMainnet: isEonMainnet,
               });
               return;
           }
@@ -214,8 +214,8 @@ class UserPane extends React.Component {
           console.error("Please install MetaMask !");
           return <div className="header-message">Please install MetaMask !</div>;
       }
-      if (!this.state.isYumaTestnet) {
-          return <div className="header-message">Please switch to Yuma Network</div>;
+      if (!this.state.isEon) {
+          return <div className="header-message">Please switch to Gobi Network</div>;
       }
       if (!this.state.isLoggedIn) {
           return <MyLoginButton clickHandler={this.tryLogin} isDisabled={false} label="Connect Metamask" afterLabel="" />;
@@ -262,7 +262,7 @@ function App() {
         <UserPane />
     </header>
     </div>
-    <footer>v1.0.0 - Made with 💗 on <a href="https://eon.horizen.io/docs/">HorizenEON Yuma testnet</a> by <a href="https://twitter.com/xgarreau">xgarreau</a></footer>
+    <footer>v1.2.0 - Made with 💗 on <a href="https://eon.horizen.io/docs/">Horizen EON</a> by <a href="https://twitter.com/xgarreau">xgarreau</a></footer>
     </>
   );
 }
