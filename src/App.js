@@ -263,7 +263,7 @@ function App() {
             <UserPane />
         </header>
     </div>
-    <footer>v1.2.4 - Made with 💗 on <a href="https://eon.horizen.io/docs/">Horizen EON</a> by <a href="https://twitter.com/xgarreau">xgarreau</a></footer>
+    <footer>v1.2.5 - Made with 💗 on <a href="https://eon.horizen.io/docs/">Horizen EON</a> by <a href="https://twitter.com/xgarreau">xgarreau</a></footer>
     </>
   );
 }
